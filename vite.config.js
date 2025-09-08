@@ -7,6 +7,6 @@ export default defineConfig({
     outDir: "dist"
   },
   server: {
-    open: "/index_rolling_agg.html"  // startet direkt diese HTML-Datei
+    open: "/index_rolling.html"  // startet direkt diese HTML-Datei
   }
 });
