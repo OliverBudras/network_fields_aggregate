@@ -14,7 +14,8 @@ let labelsVisible = true; // track label visibility
 
 // -------------------------
 // Field → color mapping
-const fieldColorsResp = await fetch("public/field_color.json");
+const base = '/network_fields_aggregate'; // your repo name
+const fieldColorsResp = await fetch("${base}/field_color.json");
 const fieldColorMapArray = await fieldColorsResp.json();
 const fieldColorMap = {};
 fieldColorMapArray.forEach(d => fieldColorMap[d.field] = d.color);
@@ -93,7 +94,6 @@ renderer.on("clickStage", ()=>{
 // -------------------------
 // Load window
 async function loadWindow(windowIndex){
-const base = '/network_fields_aggregate'; // your repo name
 
 const nodes = await fetch(`${base}/windows_field/nodes_window_${String(windowIndex+1).padStart(3,"0")}.json`)
   .then(r => r.json());
