@@ -15,7 +15,7 @@ let labelsVisible = true; // track label visibility
 // -------------------------
 // Field → color mapping
 const base = '/network_fields_aggregate'; // your repo name
-const fieldColorsResp = await fetch("${base}/field_color.json");
+const fieldColorsResp = await fetch(`${base}/field_color.json`);
 const fieldColorMapArray = await fieldColorsResp.json();
 const fieldColorMap = {};
 fieldColorMapArray.forEach(d => fieldColorMap[d.field] = d.color);
