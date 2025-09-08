@@ -9,6 +9,8 @@
     "field": "Arts and Humanities",
     "numbernodes": 1,
     "degree": 2,
+    "betweeness": 0,
+    "closeness": 0.038,
     "between_edges": 4,
     "withinedges": 0,
     "totaledges": 4,
@@ -16,8 +18,8 @@
     "internalratio": 0,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.6327,
-    "y": -0.0831
+    "x": -0.732,
+    "y": -1
   },
   {
     "id": "Biochemistry, Genetics and Molecular Biology",
@@ -29,6 +31,8 @@
     "field": "Biochemistry, Genetics and Molecular Biology",
     "numbernodes": 2,
     "degree": 1,
+    "betweeness": 0,
+    "closeness": 0.0339,
     "between_edges": 2,
     "withinedges": 0,
     "totaledges": 2,
@@ -36,8 +40,8 @@
     "internalratio": 0,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.4551,
-    "y": -1
+    "x": -1,
+    "y": -0.4928
   },
   {
     "id": "Business, Management and Accounting",
@@ -49,6 +53,8 @@
     "field": "Business, Management and Accounting",
     "numbernodes": 2,
     "degree": 2,
+    "betweeness": 0,
+    "closeness": 0.0511,
     "between_edges": 2,
     "withinedges": 0,
     "totaledges": 2,
@@ -56,8 +62,8 @@
     "internalratio": 0,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 1,
-    "y": 0.0002
+    "x": -0.4836,
+    "y": -0.5046
   },
   {
     "id": "Computer Science",
@@ -69,6 +75,7 @@
     "field": "Computer Science",
     "numbernodes": 2,
     "degree": 0,
+    "betweeness": 0,
     "between_edges": 0,
     "withinedges": 1,
     "totaledges": 1,
@@ -76,7 +83,7 @@
     "internalratio": 1,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": -1,
+    "x": 1,
     "y": 1
   },
   {
@@ -89,6 +96,8 @@
     "field": "Decision Sciences",
     "numbernodes": 10,
     "degree": 3,
+    "betweeness": 5,
+    "closeness": 0.0726,
     "between_edges": 8,
     "withinedges": 1,
     "totaledges": 9,
@@ -96,8 +105,8 @@
     "internalratio": 0.1111,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.8404,
-    "y": 0.1127
+    "x": -0.5664,
+    "y": -0.8458
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -109,6 +118,8 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 18,
     "degree": 4,
+    "betweeness": 13,
+    "closeness": 0.0871,
     "between_edges": 15,
     "withinedges": 10,
     "totaledges": 25,
@@ -116,8 +127,8 @@
     "internalratio": 0.4,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.8732,
-    "y": -0.454
+    "x": -0.641,
+    "y": -0.3138
   },
   {
     "id": "Engineering",
@@ -129,6 +140,8 @@
     "field": "Engineering",
     "numbernodes": 2,
     "degree": 2,
+    "betweeness": 0,
+    "closeness": 0.0602,
     "between_edges": 5,
     "withinedges": 0,
     "totaledges": 5,
@@ -136,8 +149,8 @@
     "internalratio": 0,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.7892,
-    "y": -0.9441
+    "x": -0.777,
+    "y": -0.0249
   },
   {
     "id": "Social Sciences",
@@ -149,6 +162,8 @@
     "field": "Social Sciences",
     "numbernodes": 11,
     "degree": 4,
+    "betweeness": 5,
+    "closeness": 0.0713,
     "between_edges": 12,
     "withinedges": 5,
     "totaledges": 17,
@@ -156,7 +171,7 @@
     "internalratio": 0.2941,
     "window": "1978-1982",
     "stringsAsFactors": false,
-    "x": 0.6194,
-    "y": -0.717
+    "x": -0.8476,
+    "y": -0.4813
   }
 ]

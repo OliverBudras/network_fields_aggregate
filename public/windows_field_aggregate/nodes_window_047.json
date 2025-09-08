@@ -9,6 +9,8 @@
     "field": "Agricultural and Biological Sciences",
     "numbernodes": 15,
     "degree": 12,
+    "betweeness": 0,
+    "closeness": 0.0673,
     "between_edges": 89,
     "withinedges": 4,
     "totaledges": 93,
@@ -16,8 +18,8 @@
     "internalratio": 0.043,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.0104,
-    "y": -1
+    "x": -0.4643,
+    "y": -0.7668
   },
   {
     "id": "Arts and Humanities",
@@ -29,6 +31,8 @@
     "field": "Arts and Humanities",
     "numbernodes": 3,
     "degree": 7,
+    "betweeness": 0,
+    "closeness": 0.0455,
     "between_edges": 25,
     "withinedges": 0,
     "totaledges": 25,
@@ -36,8 +40,8 @@
     "internalratio": 0,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -1,
-    "y": 0.0159
+    "x": 0.3282,
+    "y": 1
   },
   {
     "id": "Biochemistry, Genetics and Molecular Biology",
@@ -49,6 +53,8 @@
     "field": "Biochemistry, Genetics and Molecular Biology",
     "numbernodes": 28,
     "degree": 16,
+    "betweeness": 0,
+    "closeness": 0.113,
     "between_edges": 1015,
     "withinedges": 44,
     "totaledges": 1059,
@@ -56,8 +62,8 @@
     "internalratio": 0.0415,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.6539,
-    "y": -0.3979
+    "x": 0.5006,
+    "y": -0.5512
   },
   {
     "id": "Business, Management and Accounting",
@@ -69,6 +75,8 @@
     "field": "Business, Management and Accounting",
     "numbernodes": 366,
     "degree": 18,
+    "betweeness": 17,
+    "closeness": 0.1139,
     "between_edges": 1746,
     "withinedges": 1516,
     "totaledges": 3262,
@@ -76,8 +84,8 @@
     "internalratio": 0.4647,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.4096,
-    "y": 0.3124
+    "x": -0.3199,
+    "y": 0.3222
   },
   {
     "id": "Computer Science",
@@ -89,6 +97,8 @@
     "field": "Computer Science",
     "numbernodes": 1108,
     "degree": 16,
+    "betweeness": 9,
+    "closeness": 0.1169,
     "between_edges": 4916,
     "withinedges": 2988,
     "totaledges": 7904,
@@ -96,8 +106,8 @@
     "internalratio": 0.378,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.2055,
-    "y": -0.546
+    "x": 0.0562,
+    "y": -0.1596
   },
   {
     "id": "Decision Sciences",
@@ -109,6 +119,8 @@
     "field": "Decision Sciences",
     "numbernodes": 540,
     "degree": 17,
+    "betweeness": 58,
+    "closeness": 0.1182,
     "between_edges": 6029,
     "withinedges": 1324,
     "totaledges": 7353,
@@ -116,8 +128,8 @@
     "internalratio": 0.1801,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.2943,
-    "y": -0.2069
+    "x": 0.2414,
+    "y": 0.32
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -129,6 +141,8 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 279,
     "degree": 14,
+    "betweeness": 0,
+    "closeness": 0.1141,
     "between_edges": 1919,
     "withinedges": 367,
     "totaledges": 2286,
@@ -136,8 +150,8 @@
     "internalratio": 0.1605,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.2479,
-    "y": -0.6751
+    "x": -0.1472,
+    "y": -0.9744
   },
   {
     "id": "Energy",
@@ -149,6 +163,8 @@
     "field": "Energy",
     "numbernodes": 8,
     "degree": 11,
+    "betweeness": 0,
+    "closeness": 0.0758,
     "between_edges": 89,
     "withinedges": 0,
     "totaledges": 89,
@@ -156,8 +172,8 @@
     "internalratio": 0,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.0119,
-    "y": 0.5547
+    "x": -0.7707,
+    "y": 0.3027
   },
   {
     "id": "Engineering",
@@ -169,6 +185,8 @@
     "field": "Engineering",
     "numbernodes": 1254,
     "degree": 17,
+    "betweeness": 17,
+    "closeness": 0.1172,
     "between_edges": 5693,
     "withinedges": 4132,
     "totaledges": 9825,
@@ -176,8 +194,8 @@
     "internalratio": 0.4206,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.1169,
-    "y": -0.1731
+    "x": 0.5641,
+    "y": -0.0767
   },
   {
     "id": "Environmental Science",
@@ -189,6 +207,8 @@
     "field": "Environmental Science",
     "numbernodes": 31,
     "degree": 12,
+    "betweeness": 0,
+    "closeness": 0.0977,
     "between_edges": 309,
     "withinedges": 7,
     "totaledges": 316,
@@ -196,8 +216,8 @@
     "internalratio": 0.0222,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.4153,
-    "y": -0.87
+    "x": -0.7023,
+    "y": -0.4092
   },
   {
     "id": "Health Professions",
@@ -209,6 +229,8 @@
     "field": "Health Professions",
     "numbernodes": 6,
     "degree": 10,
+    "betweeness": 0,
+    "closeness": 0.0798,
     "between_edges": 122,
     "withinedges": 2,
     "totaledges": 124,
@@ -216,8 +238,8 @@
     "internalratio": 0.0161,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 1,
-    "y": -0.2775
+    "x": 0.9005,
+    "y": -0.5275
   },
   {
     "id": "Immunology and Microbiology",
@@ -229,6 +251,8 @@
     "field": "Immunology and Microbiology",
     "numbernodes": 2,
     "degree": 4,
+    "betweeness": 0,
+    "closeness": 0.0116,
     "between_edges": 7,
     "withinedges": 0,
     "totaledges": 7,
@@ -236,8 +260,8 @@
     "internalratio": 0,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.302,
-    "y": 1
+    "x": -1,
+    "y": 0.8117
   },
   {
     "id": "Materials Science",
@@ -249,6 +273,8 @@
     "field": "Materials Science",
     "numbernodes": 1,
     "degree": 6,
+    "betweeness": 0,
+    "closeness": 0.0282,
     "between_edges": 12,
     "withinedges": 0,
     "totaledges": 12,
@@ -256,8 +282,8 @@
     "internalratio": 0,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.4379,
-    "y": 0.6051
+    "x": 0.7532,
+    "y": 0.9147
   },
   {
     "id": "Mathematics",
@@ -269,6 +295,8 @@
     "field": "Mathematics",
     "numbernodes": 35,
     "degree": 15,
+    "betweeness": 17,
+    "closeness": 0.1087,
     "between_edges": 541,
     "withinedges": 36,
     "totaledges": 577,
@@ -276,8 +304,8 @@
     "internalratio": 0.0624,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.7536,
-    "y": 0.1164
+    "x": -0.3652,
+    "y": -0.2004
   },
   {
     "id": "Medicine",
@@ -289,6 +317,8 @@
     "field": "Medicine",
     "numbernodes": 24,
     "degree": 14,
+    "betweeness": 0,
+    "closeness": 0.1048,
     "between_edges": 580,
     "withinedges": 5,
     "totaledges": 585,
@@ -296,8 +326,8 @@
     "internalratio": 0.0085,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.5512,
-    "y": -0.8448
+    "x": 0.4051,
+    "y": -1
   },
   {
     "id": "Neuroscience",
@@ -309,6 +339,8 @@
     "field": "Neuroscience",
     "numbernodes": 14,
     "degree": 10,
+    "betweeness": 0,
+    "closeness": 0.0923,
     "between_edges": 113,
     "withinedges": 2,
     "totaledges": 115,
@@ -316,8 +348,8 @@
     "internalratio": 0.0174,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.0732,
-    "y": 0.1677
+    "x": 1,
+    "y": -0.0138
   },
   {
     "id": "Physics and Astronomy",
@@ -329,6 +361,8 @@
     "field": "Physics and Astronomy",
     "numbernodes": 176,
     "degree": 17,
+    "betweeness": 0,
+    "closeness": 0.116,
     "between_edges": 2730,
     "withinedges": 421,
     "totaledges": 3151,
@@ -336,8 +370,8 @@
     "internalratio": 0.1336,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.5455,
-    "y": -0.1354
+    "x": 0.6604,
+    "y": 0.385
   },
   {
     "id": "Psychology",
@@ -349,6 +383,8 @@
     "field": "Psychology",
     "numbernodes": 36,
     "degree": 14,
+    "betweeness": 0,
+    "closeness": 0.1023,
     "between_edges": 387,
     "withinedges": 18,
     "totaledges": 405,
@@ -356,8 +392,8 @@
     "internalratio": 0.0444,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": -0.6964,
-    "y": -0.5597
+    "x": 0.0598,
+    "y": -0.5824
   },
   {
     "id": "Social Sciences",
@@ -369,6 +405,8 @@
     "field": "Social Sciences",
     "numbernodes": 659,
     "degree": 18,
+    "betweeness": 105,
+    "closeness": 0.1184,
     "between_edges": 7126,
     "withinedges": 16710,
     "totaledges": 23836,
@@ -376,7 +414,7 @@
     "internalratio": 0.701,
     "window": "2016-2020",
     "stringsAsFactors": false,
-    "x": 0.3275,
-    "y": 0.2439
+    "x": -0.0756,
+    "y": 0.6911
   }
 ]
