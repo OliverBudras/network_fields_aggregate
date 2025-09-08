@@ -1,0 +1,534 @@
+[
+  {
+    "id": "e1",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Biochemistry, Genetics and Molecular Biology",
+    "weight": 0.0297,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e2",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Computer Science",
+    "weight": 0.0684,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e3",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Decision Sciences",
+    "weight": 0.9811,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e4",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 1.4174,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e5",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Social Sciences",
+    "weight": 2.6888,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e6",
+    "source": "Arts and Humanities",
+    "target": "Business, Management and Accounting",
+    "weight": 0.1792,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e7",
+    "source": "Arts and Humanities",
+    "target": "Computer Science",
+    "weight": 1.6793,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e8",
+    "source": "Arts and Humanities",
+    "target": "Decision Sciences",
+    "weight": 1.9627,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e9",
+    "source": "Arts and Humanities",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 1.0296,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e10",
+    "source": "Arts and Humanities",
+    "target": "Environmental Science",
+    "weight": 0.0533,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e11",
+    "source": "Arts and Humanities",
+    "target": "Physics and Astronomy",
+    "weight": 0.1489,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e12",
+    "source": "Arts and Humanities",
+    "target": "Psychology",
+    "weight": 0.1083,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e13",
+    "source": "Arts and Humanities",
+    "target": "Social Sciences",
+    "weight": 4.3532,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e14",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Computer Science",
+    "weight": 2.5803,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e15",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Decision Sciences",
+    "weight": 4.924,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e16",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 0.1976,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e17",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Engineering",
+    "weight": 0.3083,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e18",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Environmental Science",
+    "weight": 0.069,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e19",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Mathematics",
+    "weight": 1.2651,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e20",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Medicine",
+    "weight": 0.7423,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e21",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Physics and Astronomy",
+    "weight": 0.1821,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e22",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Social Sciences",
+    "weight": 36.2038,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e23",
+    "source": "Business, Management and Accounting",
+    "target": "Computer Science",
+    "weight": 7.0512,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e24",
+    "source": "Business, Management and Accounting",
+    "target": "Decision Sciences",
+    "weight": 17.1096,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e25",
+    "source": "Business, Management and Accounting",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 11.7818,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e26",
+    "source": "Business, Management and Accounting",
+    "target": "Engineering",
+    "weight": 9.9622,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e27",
+    "source": "Business, Management and Accounting",
+    "target": "Environmental Science",
+    "weight": 0.3655,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e28",
+    "source": "Business, Management and Accounting",
+    "target": "Mathematics",
+    "weight": 0.3404,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e29",
+    "source": "Business, Management and Accounting",
+    "target": "Physics and Astronomy",
+    "weight": 0.2981,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e30",
+    "source": "Business, Management and Accounting",
+    "target": "Social Sciences",
+    "weight": 11.3214,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e31",
+    "source": "Computer Science",
+    "target": "Decision Sciences",
+    "weight": 253.8329,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e32",
+    "source": "Computer Science",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 30.4697,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e33",
+    "source": "Computer Science",
+    "target": "Engineering",
+    "weight": 247.8584,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e34",
+    "source": "Computer Science",
+    "target": "Environmental Science",
+    "weight": 1.3723,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e35",
+    "source": "Computer Science",
+    "target": "Mathematics",
+    "weight": 0.3271,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e36",
+    "source": "Computer Science",
+    "target": "Medicine",
+    "weight": 0.7968,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e37",
+    "source": "Computer Science",
+    "target": "Neuroscience",
+    "weight": 0.1155,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e38",
+    "source": "Computer Science",
+    "target": "Physics and Astronomy",
+    "weight": 13.4795,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e39",
+    "source": "Computer Science",
+    "target": "Psychology",
+    "weight": 0.5689,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e40",
+    "source": "Computer Science",
+    "target": "Social Sciences",
+    "weight": 63.0421,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e41",
+    "source": "Decision Sciences",
+    "target": "Earth and Planetary Sciences",
+    "weight": 0.1909,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e42",
+    "source": "Decision Sciences",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 91.9849,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e43",
+    "source": "Decision Sciences",
+    "target": "Engineering",
+    "weight": 62.3013,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e44",
+    "source": "Decision Sciences",
+    "target": "Environmental Science",
+    "weight": 3.8927,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e45",
+    "source": "Decision Sciences",
+    "target": "Mathematics",
+    "weight": 4.7184,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e46",
+    "source": "Decision Sciences",
+    "target": "Medicine",
+    "weight": 3.2357,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e47",
+    "source": "Decision Sciences",
+    "target": "Neuroscience",
+    "weight": 0.3904,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e48",
+    "source": "Decision Sciences",
+    "target": "Physics and Astronomy",
+    "weight": 14.9857,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e49",
+    "source": "Decision Sciences",
+    "target": "Psychology",
+    "weight": 1.0894,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e50",
+    "source": "Decision Sciences",
+    "target": "Social Sciences",
+    "weight": 177.6801,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e51",
+    "source": "Earth and Planetary Sciences",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 0.3698,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e52",
+    "source": "Earth and Planetary Sciences",
+    "target": "Engineering",
+    "weight": 0.2774,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e53",
+    "source": "Earth and Planetary Sciences",
+    "target": "Social Sciences",
+    "weight": 0.1176,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e54",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Engineering",
+    "weight": 14.8782,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e55",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Environmental Science",
+    "weight": 1.686,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e56",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Mathematics",
+    "weight": 0.3139,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e57",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Medicine",
+    "weight": 0.3801,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e58",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Pharmacology, Toxicology and Pharmaceutics",
+    "weight": 0.0753,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e59",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Physics and Astronomy",
+    "weight": 2.8916,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e60",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Social Sciences",
+    "weight": 30.8156,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e61",
+    "source": "Energy",
+    "target": "Engineering",
+    "weight": 4.8516,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e62",
+    "source": "Engineering",
+    "target": "Environmental Science",
+    "weight": 0.3322,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e63",
+    "source": "Engineering",
+    "target": "Medicine",
+    "weight": 1.6873,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e64",
+    "source": "Engineering",
+    "target": "Neuroscience",
+    "weight": 0.0603,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e65",
+    "source": "Engineering",
+    "target": "Physics and Astronomy",
+    "weight": 3.2497,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e66",
+    "source": "Engineering",
+    "target": "Psychology",
+    "weight": 0.1793,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e67",
+    "source": "Engineering",
+    "target": "Social Sciences",
+    "weight": 19.0344,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e68",
+    "source": "Environmental Science",
+    "target": "Physics and Astronomy",
+    "weight": 0.1713,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e69",
+    "source": "Environmental Science",
+    "target": "Social Sciences",
+    "weight": 2.2786,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e70",
+    "source": "Mathematics",
+    "target": "Social Sciences",
+    "weight": 7.7776,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e71",
+    "source": "Medicine",
+    "target": "Physics and Astronomy",
+    "weight": 0.1826,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e72",
+    "source": "Medicine",
+    "target": "Social Sciences",
+    "weight": 4.9755,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e73",
+    "source": "Neuroscience",
+    "target": "Social Sciences",
+    "weight": 1.5743,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e74",
+    "source": "Pharmacology, Toxicology and Pharmaceutics",
+    "target": "Social Sciences",
+    "weight": 0.061,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e75",
+    "source": "Physics and Astronomy",
+    "target": "Social Sciences",
+    "weight": 16.9598,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e76",
+    "source": "Psychology",
+    "target": "Social Sciences",
+    "weight": 0.8938,
+    "stringsAsFactors": false
+  }
+]

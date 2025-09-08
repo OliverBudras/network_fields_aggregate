@@ -1,0 +1,72 @@
+[
+  {
+    "id": "e1",
+    "source": "Agricultural and Biological Sciences",
+    "target": "Social Sciences",
+    "weight": 0.1083,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e2",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Decision Sciences",
+    "weight": 0.2357,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e3",
+    "source": "Biochemistry, Genetics and Molecular Biology",
+    "target": "Social Sciences",
+    "weight": 0.2995,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e4",
+    "source": "Business, Management and Accounting",
+    "target": "Social Sciences",
+    "weight": 0.169,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e5",
+    "source": "Computer Science",
+    "target": "Social Sciences",
+    "weight": 0.0399,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e6",
+    "source": "Decision Sciences",
+    "target": "Economics, Econometrics and Finance",
+    "weight": 6.9063,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e7",
+    "source": "Decision Sciences",
+    "target": "Engineering",
+    "weight": 0.4547,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e8",
+    "source": "Decision Sciences",
+    "target": "Social Sciences",
+    "weight": 7.7135,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e9",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Mathematics",
+    "weight": 0.2674,
+    "stringsAsFactors": false
+  },
+  {
+    "id": "e10",
+    "source": "Economics, Econometrics and Finance",
+    "target": "Social Sciences",
+    "weight": 1.7938,
+    "stringsAsFactors": false
+  }
+]
