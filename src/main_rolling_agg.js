@@ -1,6 +1,6 @@
 import Graph from "./node_modules/graphology/dist/graphology.umd.min.js";
 import Sigma from "./node_modules/sigma/dist/sigma.min.js";
-import { NodeBorderProgram } from "@sigma/node-border";
+import { NodeBorderProgram } from "./node_modules/@sigma/node-border/dist/sigma-node-border.cjs.js";
 
 const container = document.getElementById("sigma-container");
 const infoBox = document.getElementById("node-info");
