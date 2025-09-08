@@ -1,4 +1,4 @@
-import Graph from "graphology";
+import Graph from "./node_modules/graphology/dist/graphology.umd.min.js";
 import Sigma from "sigma";
 import { NodeBorderProgram } from "@sigma/node-border";
 
