@@ -1,5 +1,5 @@
 import Graph from "./node_modules/graphology/dist/graphology.umd.min.js";
-import Sigma from "sigma";
+import Sigma from "./node_modules/sigma/dist/sigma.min.js";
 import { NodeBorderProgram } from "@sigma/node-border";
 
 const container = document.getElementById("sigma-container");
