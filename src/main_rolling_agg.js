@@ -103,8 +103,14 @@ renderer.on("clickStage", ()=>{
 // -------------------------
 // Load window
 async function loadWindow(windowIndex){
- const nodes = await fetch('/network_fields_aggregate/windows_field_aggregate/nodes_window_001.json').then(r => r.json());
-const edges = await fetch('/network_fields_aggregate/windows_field_aggregate/edges_window_001.json').then(r => r.json());
+
+const base = '/network_fields_aggregate'; // your repo name
+
+const nodes = await fetch(`${base}/windows_field_aggregate/nodes_window_${String(windowIndex+1).padStart(3,"0")}.json`)
+  .then(r => r.json());
+
+const edges = await fetch(`${base}/windows_field_aggregate/edges_window_${String(windowIndex+1).padStart(3,"0")}.json`)
+  .then(r => r.json());
 
 
   graph.clear();
