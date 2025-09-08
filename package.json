@@ -10,7 +10,7 @@
     "graphology": "^0.25.1",
     "graphology-layout-forceatlas2": "^0.8.0",
     "sigma": "^2.3.0",
-    "@sigma/node-border": "^0.2.0"
+    "@sigma/node-border": "^3.0.0"
   },
   "devDependencies": {
     "vite": "^4.5.0"
