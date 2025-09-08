@@ -11,8 +11,8 @@
     "domain": "Physical Sciences",
     "field": "Computer Science",
     "window": "1972-1976",
-    "x": 0.1116,
-    "y": 0.9986
+    "x": -0.6368,
+    "y": -0.6918
   },
   {
     "id": "https://openalex.org/W1977307047",
@@ -26,8 +26,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": 0.2118,
-    "y": -0.0946
+    "x": 0.1993,
+    "y": 0.0474
   },
   {
     "id": "https://openalex.org/W1978625219",
@@ -41,8 +41,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.1967,
-    "y": -0.0593
+    "x": 0.2034,
+    "y": 0.0923
   },
   {
     "id": "https://openalex.org/W1984519282",
@@ -56,8 +56,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.1038,
-    "y": -0.0112
+    "x": 0.1175,
+    "y": 0.1509
   },
   {
     "id": "https://openalex.org/W1987855261",
@@ -71,8 +71,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.1823,
-    "y": -0.0546
+    "x": 0.1941,
+    "y": 0.1055
   },
   {
     "id": "https://openalex.org/W1990149375",
@@ -86,8 +86,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": -0.5542,
-    "y": -0.4608
+    "x": -0.1427,
+    "y": -0.8819
   },
   {
     "id": "https://openalex.org/W1991361805",
@@ -101,8 +101,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": -0.5565,
-    "y": -0.4429
+    "x": -0.1503,
+    "y": -0.8629
   },
   {
     "id": "https://openalex.org/W1993823698",
@@ -116,8 +116,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": 0.0458,
-    "y": -0.0361
+    "x": 0.1108,
+    "y": 0.2244
   },
   {
     "id": "https://openalex.org/W1994876522",
@@ -131,8 +131,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": -0.6351,
-    "y": 0.3569
+    "x": 0.5608,
+    "y": -0.9901
   },
   {
     "id": "https://openalex.org/W2002107012",
@@ -146,8 +146,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": -0.6269,
-    "y": 0.3393
+    "x": 0.5454,
+    "y": -0.9775
   },
   {
     "id": "https://openalex.org/W2007767952",
@@ -161,8 +161,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": 0.2027,
-    "y": -0.0793
+    "x": 0.199,
+    "y": 0.0683
   },
   {
     "id": "https://openalex.org/W2013863403",
@@ -176,8 +176,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.0818,
-    "y": -0.0487
+    "x": 0.1376,
+    "y": 0.1862
   },
   {
     "id": "https://openalex.org/W2016775734",
@@ -191,8 +191,8 @@
     "domain": "Physical Sciences",
     "field": "Engineering",
     "window": "1972-1976",
-    "x": 0.8031,
-    "y": -0.272
+    "x": 0.9829,
+    "y": 0.1506
   },
   {
     "id": "https://openalex.org/W2020092765",
@@ -206,8 +206,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.0785,
-    "y": 0.0145
+    "x": 0.0798,
+    "y": 0.1575
   },
   {
     "id": "https://openalex.org/W2020375221",
@@ -221,8 +221,8 @@
     "domain": "Physical Sciences",
     "field": "Engineering",
     "window": "1972-1976",
-    "x": -0.9992,
-    "y": -0.1264
+    "x": 0.7558,
+    "y": 0.9926
   },
   {
     "id": "https://openalex.org/W2021727756",
@@ -236,8 +236,8 @@
     "domain": "Physical Sciences",
     "field": "Engineering",
     "window": "1972-1976",
-    "x": 0.7979,
-    "y": -0.2595
+    "x": 0.9931,
+    "y": 0.1603
   },
   {
     "id": "https://openalex.org/W2035016955",
@@ -251,8 +251,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.9942,
-    "y": 0.5595
+    "x": -1,
+    "y": -0.2949
   },
   {
     "id": "https://openalex.org/W2057383904",
@@ -266,8 +266,8 @@
     "domain": "Physical Sciences",
     "field": "Mathematics",
     "window": "1972-1976",
-    "x": -0.6463,
-    "y": 0.3407
+    "x": 0.5439,
+    "y": -1
   },
   {
     "id": "https://openalex.org/W2062490656",
@@ -281,8 +281,8 @@
     "domain": "Social Sciences",
     "field": "Psychology",
     "window": "1972-1976",
-    "x": -0.0259,
-    "y": -0.0438
+    "x": 0.0883,
+    "y": 0.3026
   },
   {
     "id": "https://openalex.org/W2072291436",
@@ -296,8 +296,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": -0.0099,
-    "y": -0.0527
+    "x": 0.1025,
+    "y": 0.2905
   },
   {
     "id": "https://openalex.org/W2078184820",
@@ -311,8 +311,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.4815,
-    "y": -1
+    "x": -0.6278,
+    "y": 0.7919
   },
   {
     "id": "https://openalex.org/W2085010502",
@@ -326,8 +326,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.0117,
-    "y": -0.0381
+    "x": 0.0985,
+    "y": 0.2608
   },
   {
     "id": "https://openalex.org/W2085502694",
@@ -341,8 +341,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": -0.018,
-    "y": -0.0273
+    "x": 0.0864,
+    "y": 0.2839
   },
   {
     "id": "https://openalex.org/W2087511458",
@@ -356,8 +356,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.0795,
-    "y": -0.0014
+    "x": 0.0937,
+    "y": 0.1663
   },
   {
     "id": "https://openalex.org/W2090320324",
@@ -371,8 +371,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.0958,
-    "y": -0.0416
+    "x": 0.1099,
+    "y": 0.1848
   },
   {
     "id": "https://openalex.org/W2116476350",
@@ -386,8 +386,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.1646,
-    "y": -0.0572
+    "x": 0.1784,
+    "y": 0.1129
   },
   {
     "id": "https://openalex.org/W2056673372",
@@ -401,8 +401,8 @@
     "domain": "Physical Sciences",
     "field": "Computer Science",
     "window": "1972-1976",
-    "x": 0.1052,
-    "y": 1
+    "x": -0.6319,
+    "y": -0.6875
   },
   {
     "id": "https://openalex.org/W2085656986",
@@ -416,8 +416,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.2137,
-    "y": -0.0524
+    "x": 0.2205,
+    "y": 0.0895
   },
   {
     "id": "https://openalex.org/W2042812838",
@@ -431,8 +431,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.1135,
-    "y": 0.0008
+    "x": 0.1134,
+    "y": 0.1343
   },
   {
     "id": "https://openalex.org/W2119989345",
@@ -446,8 +446,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.083,
-    "y": -0.0329
+    "x": 0.1226,
+    "y": 0.1837
   },
   {
     "id": "https://openalex.org/W2096892705",
@@ -461,8 +461,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": -0.5561,
-    "y": -0.452
+    "x": -0.147,
+    "y": -0.8728
   },
   {
     "id": "https://openalex.org/W2091766360",
@@ -476,8 +476,8 @@
     "domain": "Physical Sciences",
     "field": "Computer Science",
     "window": "1972-1976",
-    "x": -0.6364,
-    "y": 0.3459
+    "x": 0.5503,
+    "y": -0.9897
   },
   {
     "id": "https://openalex.org/W2151805730",
@@ -491,8 +491,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 0.2205,
-    "y": -0.0858
+    "x": 0.2105,
+    "y": 0.0516
   },
   {
     "id": "https://openalex.org/W2123164186",
@@ -506,8 +506,8 @@
     "domain": "Physical Sciences",
     "field": "Engineering",
     "window": "1972-1976",
-    "x": 0.8054,
-    "y": -0.2815
+    "x": 0.9748,
+    "y": 0.1439
   },
   {
     "id": "https://openalex.org/W3140708605",
@@ -521,8 +521,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": -1,
-    "y": -0.1327
+    "x": 0.757,
+    "y": 1
   },
   {
     "id": "https://openalex.org/W2114431050",
@@ -536,8 +536,8 @@
     "domain": "Physical Sciences",
     "field": "Engineering",
     "window": "1972-1976",
-    "x": 0.7931,
-    "y": -0.2505
+    "x": 1,
+    "y": 0.1682
   },
   {
     "id": "https://openalex.org/W2042156404",
@@ -551,8 +551,8 @@
     "domain": "Social Sciences",
     "field": "Economics, Econometrics and Finance",
     "window": "1972-1976",
-    "x": 1,
-    "y": 0.5563
+    "x": -0.9993,
+    "y": -0.2874
   },
   {
     "id": "https://openalex.org/W2110134797",
@@ -566,8 +566,8 @@
     "domain": "Social Sciences",
     "field": "Social Sciences",
     "window": "1972-1976",
-    "x": -0.0464,
-    "y": -0.0481
+    "x": 0.0839,
+    "y": 0.3259
   },
   {
     "id": "https://openalex.org/W4233736925",
@@ -581,8 +581,8 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": -0.012,
-    "y": -0.0351
+    "x": 0.0771,
+    "y": 0.2863
   },
   {
     "id": "https://openalex.org/W2560731798",
@@ -596,7 +596,7 @@
     "domain": "Social Sciences",
     "field": "Decision Sciences",
     "window": "1972-1976",
-    "x": 0.4875,
-    "y": -0.9974
+    "x": -0.6269,
+    "y": 0.7845
   }
 ]
