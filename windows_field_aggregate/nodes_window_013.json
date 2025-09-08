@@ -9,6 +9,8 @@
     "field": "Agricultural and Biological Sciences",
     "numbernodes": 2,
     "degree": 3,
+    "betweeness": 0,
+    "closeness": 0.0305,
     "between_edges": 8,
     "withinedges": 0,
     "totaledges": 8,
@@ -16,7 +18,7 @@
     "internalratio": 0,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": -0.6202,
+    "x": 0.2934,
     "y": -1
   },
   {
@@ -29,6 +31,8 @@
     "field": "Arts and Humanities",
     "numbernodes": 1,
     "degree": 2,
+    "betweeness": 0,
+    "closeness": 0.0178,
     "between_edges": 4,
     "withinedges": 0,
     "totaledges": 4,
@@ -36,8 +40,8 @@
     "internalratio": 0,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 0.8429,
-    "y": -0.2815
+    "x": 0.303,
+    "y": 0.1799
   },
   {
     "id": "Biochemistry, Genetics and Molecular Biology",
@@ -49,6 +53,8 @@
     "field": "Biochemistry, Genetics and Molecular Biology",
     "numbernodes": 2,
     "degree": 3,
+    "betweeness": 0,
+    "closeness": 0.0258,
     "between_edges": 10,
     "withinedges": 1,
     "totaledges": 11,
@@ -56,8 +62,8 @@
     "internalratio": 0.0909,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": -1,
-    "y": -0.8945
+    "x": 0.5378,
+    "y": -0.8955
   },
   {
     "id": "Business, Management and Accounting",
@@ -69,6 +75,8 @@
     "field": "Business, Management and Accounting",
     "numbernodes": 1,
     "degree": 3,
+    "betweeness": 0,
+    "closeness": 0.0308,
     "between_edges": 14,
     "withinedges": 0,
     "totaledges": 14,
@@ -76,8 +84,8 @@
     "internalratio": 0,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": -0.5712,
-    "y": -0.1386
+    "x": 0.0013,
+    "y": -0.209
   },
   {
     "id": "Computer Science",
@@ -89,6 +97,8 @@
     "field": "Computer Science",
     "numbernodes": 6,
     "degree": 2,
+    "betweeness": 9,
+    "closeness": 0.0294,
     "between_edges": 4,
     "withinedges": 1,
     "totaledges": 5,
@@ -96,8 +106,8 @@
     "internalratio": 0.2,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 0.7587,
-    "y": 0.6967
+    "x": -0.7605,
+    "y": 0.7173
   },
   {
     "id": "Decision Sciences",
@@ -109,6 +119,8 @@
     "field": "Decision Sciences",
     "numbernodes": 21,
     "degree": 8,
+    "betweeness": 30,
+    "closeness": 0.0496,
     "between_edges": 49,
     "withinedges": 12,
     "totaledges": 61,
@@ -116,8 +128,8 @@
     "internalratio": 0.1967,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 0.0752,
-    "y": -0.6441
+    "x": 0.4129,
+    "y": -0.3753
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -129,6 +141,8 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 24,
     "degree": 6,
+    "betweeness": 16,
+    "closeness": 0.0448,
     "between_edges": 36,
     "withinedges": 30,
     "totaledges": 66,
@@ -136,8 +150,8 @@
     "internalratio": 0.4545,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 0.2284,
-    "y": 0.0243
+    "x": -0.2319,
+    "y": 0.0905
   },
   {
     "id": "Engineering",
@@ -149,6 +163,8 @@
     "field": "Engineering",
     "numbernodes": 10,
     "degree": 3,
+    "betweeness": 0,
+    "closeness": 0.0357,
     "between_edges": 10,
     "withinedges": 4,
     "totaledges": 14,
@@ -156,8 +172,8 @@
     "internalratio": 0.2857,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": -0.0367,
-    "y": -0.2855
+    "x": -0.3408,
+    "y": -0.3593
   },
   {
     "id": "Medicine",
@@ -169,6 +185,8 @@
     "field": "Medicine",
     "numbernodes": 1,
     "degree": 1,
+    "betweeness": 0,
+    "closeness": 0.0209,
     "between_edges": 1,
     "withinedges": 0,
     "totaledges": 1,
@@ -176,8 +194,8 @@
     "internalratio": 0,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 0.6948,
-    "y": -0.9982
+    "x": 1,
+    "y": -0.3152
   },
   {
     "id": "Psychology",
@@ -189,6 +207,8 @@
     "field": "Psychology",
     "numbernodes": 1,
     "degree": 1,
+    "betweeness": 0,
+    "closeness": 0.019,
     "between_edges": 3,
     "withinedges": 0,
     "totaledges": 3,
@@ -196,7 +216,7 @@
     "internalratio": 0,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": 1,
+    "x": -1,
     "y": 1
   },
   {
@@ -209,6 +229,8 @@
     "field": "Social Sciences",
     "numbernodes": 20,
     "degree": 6,
+    "betweeness": 17,
+    "closeness": 0.0481,
     "between_edges": 61,
     "withinedges": 46,
     "totaledges": 107,
@@ -216,7 +238,7 @@
     "internalratio": 0.4299,
     "window": "1982-1986",
     "stringsAsFactors": false,
-    "x": -0.7519,
-    "y": -0.495
+    "x": -0.0341,
+    "y": -0.6512
   }
 ]
