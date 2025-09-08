@@ -9,8 +9,6 @@
     "field": "Biochemistry, Genetics and Molecular Biology",
     "numbernodes": 2,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.133,
     "between_edges": 3,
     "withinedges": 0,
     "totaledges": 3,
@@ -18,8 +16,8 @@
     "internalratio": 0,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": -1,
-    "y": 0.7561
+    "x": 1,
+    "y": -1
   },
   {
     "id": "Business, Management and Accounting",
@@ -31,8 +29,6 @@
     "field": "Business, Management and Accounting",
     "numbernodes": 1,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.19,
     "between_edges": 1,
     "withinedges": 0,
     "totaledges": 1,
@@ -40,8 +36,8 @@
     "internalratio": 0,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": 1,
-    "y": 1
+    "x": -1,
+    "y": -0.5118
   },
   {
     "id": "Decision Sciences",
@@ -53,8 +49,6 @@
     "field": "Decision Sciences",
     "numbernodes": 8,
     "degree": 3,
-    "betweeness": 8,
-    "closeness": 0.22,
     "between_edges": 6,
     "withinedges": 2,
     "totaledges": 8,
@@ -62,8 +56,8 @@
     "internalratio": 0.25,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": 0.4545,
-    "y": 0.5633
+    "x": -0.3378,
+    "y": -0.3134
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -75,8 +69,6 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 16,
     "degree": 3,
-    "betweeness": 4,
-    "closeness": 0.1462,
     "between_edges": 18,
     "withinedges": 9,
     "totaledges": 27,
@@ -84,8 +76,8 @@
     "internalratio": 0.3333,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": 0.121,
-    "y": -0.2669
+    "x": 0.2491,
+    "y": 0.3163
   },
   {
     "id": "Engineering",
@@ -97,8 +89,6 @@
     "field": "Engineering",
     "numbernodes": 4,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.108,
     "between_edges": 3,
     "withinedges": 1,
     "totaledges": 4,
@@ -106,8 +96,8 @@
     "internalratio": 0.25,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": 0.2003,
-    "y": -1
+    "x": 0.4128,
+    "y": 1
   },
   {
     "id": "Social Sciences",
@@ -119,8 +109,6 @@
     "field": "Social Sciences",
     "numbernodes": 15,
     "degree": 3,
-    "betweeness": 4,
-    "closeness": 0.1813,
     "between_edges": 17,
     "withinedges": 12,
     "totaledges": 29,
@@ -128,7 +116,7 @@
     "internalratio": 0.4138,
     "window": "1977-1981",
     "stringsAsFactors": false,
-    "x": -0.378,
-    "y": 0.4646
+    "x": 0.494,
+    "y": -0.5171
   }
 ]

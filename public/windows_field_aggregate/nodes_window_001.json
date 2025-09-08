@@ -9,8 +9,6 @@
     "field": "Computer Science",
     "numbernodes": 1,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.2695,
     "between_edges": 1,
     "withinedges": 0,
     "totaledges": 1,
@@ -18,8 +16,8 @@
     "internalratio": 0,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.4354,
-    "y": -0.7366
+    "x": -0.5933,
+    "y": -0.9794
   },
   {
     "id": "Decision Sciences",
@@ -31,8 +29,6 @@
     "field": "Decision Sciences",
     "numbernodes": 10,
     "degree": 3,
-    "betweeness": 3,
-    "closeness": 0.2804,
     "between_edges": 12,
     "withinedges": 13,
     "totaledges": 25,
@@ -40,8 +36,8 @@
     "internalratio": 0.52,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.8187,
-    "y": -0.9233
+    "x": -0.903,
+    "y": 0.19
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -53,8 +49,6 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 7,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.1562,
     "between_edges": 5,
     "withinedges": 3,
     "totaledges": 8,
@@ -63,7 +57,7 @@
     "window": "1970-1974",
     "stringsAsFactors": false,
     "x": -1,
-    "y": -0.9388
+    "y": 1
   },
   {
     "id": "Engineering",
@@ -75,7 +69,6 @@
     "field": "Engineering",
     "numbernodes": 4,
     "degree": 0,
-    "betweeness": 0,
     "between_edges": 0,
     "withinedges": 3,
     "totaledges": 3,
@@ -84,7 +77,7 @@
     "window": "1970-1974",
     "stringsAsFactors": false,
     "x": 1,
-    "y": 1
+    "y": -1
   },
   {
     "id": "Psychology",
@@ -96,8 +89,6 @@
     "field": "Psychology",
     "numbernodes": 1,
     "degree": 2,
-    "betweeness": 0,
-    "closeness": 0.2367,
     "between_edges": 5,
     "withinedges": 0,
     "totaledges": 5,
@@ -105,8 +96,8 @@
     "internalratio": 0,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.663,
-    "y": -1
+    "x": -0.8778,
+    "y": -0.7962
   },
   {
     "id": "Social Sciences",
@@ -118,8 +109,6 @@
     "field": "Social Sciences",
     "numbernodes": 6,
     "degree": 3,
-    "betweeness": 3,
-    "closeness": 0.3285,
     "between_edges": 7,
     "withinedges": 2,
     "totaledges": 9,
@@ -127,7 +116,7 @@
     "internalratio": 0.2222,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.5868,
-    "y": -0.8401
+    "x": -0.7367,
+    "y": -0.6345
   }
 ]
