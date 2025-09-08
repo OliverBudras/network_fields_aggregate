@@ -9,8 +9,6 @@
     "field": "Agricultural and Biological Sciences",
     "numbernodes": 9,
     "degree": 7,
-    "betweeness": 50,
-    "closeness": 0.1067,
     "between_edges": 71,
     "withinedges": 2,
     "totaledges": 73,
@@ -18,8 +16,8 @@
     "internalratio": 0.0274,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.7427,
-    "y": 0.0706
+    "x": 0.6872,
+    "y": -0.1818
   },
   {
     "id": "Arts and Humanities",
@@ -31,8 +29,6 @@
     "field": "Arts and Humanities",
     "numbernodes": 5,
     "degree": 6,
-    "betweeness": 0,
-    "closeness": 0.0857,
     "between_edges": 63,
     "withinedges": 1,
     "totaledges": 64,
@@ -40,8 +36,8 @@
     "internalratio": 0.0156,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.851,
-    "y": -0.1558
+    "x": -0.5161,
+    "y": 0.2871
   },
   {
     "id": "Biochemistry, Genetics and Molecular Biology",
@@ -53,8 +49,6 @@
     "field": "Biochemistry, Genetics and Molecular Biology",
     "numbernodes": 9,
     "degree": 11,
-    "betweeness": 66,
-    "closeness": 0.1053,
     "between_edges": 165,
     "withinedges": 4,
     "totaledges": 169,
@@ -62,8 +56,8 @@
     "internalratio": 0.0237,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.372,
-    "y": 0.2931
+    "x": 0.4023,
+    "y": -0.0584
   },
   {
     "id": "Business, Management and Accounting",
@@ -75,8 +69,6 @@
     "field": "Business, Management and Accounting",
     "numbernodes": 57,
     "degree": 9,
-    "betweeness": 15,
-    "closeness": 0.0964,
     "between_edges": 184,
     "withinedges": 35,
     "totaledges": 219,
@@ -84,8 +76,8 @@
     "internalratio": 0.1598,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.5486,
-    "y": 0.3514
+    "x": -0.2379,
+    "y": 0.0615
   },
   {
     "id": "Computer Science",
@@ -97,8 +89,6 @@
     "field": "Computer Science",
     "numbernodes": 313,
     "degree": 13,
-    "betweeness": 17,
-    "closeness": 0.0978,
     "between_edges": 1490,
     "withinedges": 998,
     "totaledges": 2488,
@@ -106,8 +96,8 @@
     "internalratio": 0.4011,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.5253,
-    "y": 0.0971
+    "x": -0.0622,
+    "y": 0.513
   },
   {
     "id": "Decision Sciences",
@@ -119,8 +109,6 @@
     "field": "Decision Sciences",
     "numbernodes": 316,
     "degree": 14,
-    "betweeness": 42,
-    "closeness": 0.1039,
     "between_edges": 2434,
     "withinedges": 1378,
     "totaledges": 3812,
@@ -128,8 +116,8 @@
     "internalratio": 0.3615,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.065,
-    "y": -0.1283
+    "x": -0.0725,
+    "y": -0.2728
   },
   {
     "id": "Earth and Planetary Sciences",
@@ -141,8 +129,6 @@
     "field": "Earth and Planetary Sciences",
     "numbernodes": 2,
     "degree": 3,
-    "betweeness": 0,
-    "closeness": 0.0598,
     "between_edges": 4,
     "withinedges": 0,
     "totaledges": 4,
@@ -150,8 +136,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.1716,
-    "y": -0.7972
+    "x": -0.8922,
+    "y": -0.4255
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -163,8 +149,6 @@
     "field": "Economics, Econometrics and Finance",
     "numbernodes": 178,
     "degree": 12,
-    "betweeness": 17,
-    "closeness": 0.0753,
     "between_edges": 780,
     "withinedges": 213,
     "totaledges": 993,
@@ -172,8 +156,8 @@
     "internalratio": 0.2145,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.0902,
-    "y": -0.4494
+    "x": -0.4812,
+    "y": -0.3177
   },
   {
     "id": "Energy",
@@ -185,8 +169,6 @@
     "field": "Energy",
     "numbernodes": 4,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.0099,
     "between_edges": 8,
     "withinedges": 3,
     "totaledges": 11,
@@ -194,8 +176,8 @@
     "internalratio": 0.2727,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.9258,
-    "y": 1
+    "x": 0.8168,
+    "y": -1
   },
   {
     "id": "Engineering",
@@ -207,8 +189,6 @@
     "field": "Engineering",
     "numbernodes": 117,
     "degree": 8,
-    "betweeness": 17,
-    "closeness": 0.0935,
     "between_edges": 336,
     "withinedges": 107,
     "totaledges": 443,
@@ -216,8 +196,8 @@
     "internalratio": 0.2415,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.4841,
-    "y": 0.5396
+    "x": 0.4051,
+    "y": -0.4975
   },
   {
     "id": "Environmental Science",
@@ -229,8 +209,6 @@
     "field": "Environmental Science",
     "numbernodes": 2,
     "degree": 5,
-    "betweeness": 18,
-    "closeness": 0.0959,
     "between_edges": 14,
     "withinedges": 0,
     "totaledges": 14,
@@ -238,8 +216,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.3861,
-    "y": -0.5368
+    "x": -0.5692,
+    "y": 0.5057
   },
   {
     "id": "Health Professions",
@@ -251,8 +229,6 @@
     "field": "Health Professions",
     "numbernodes": 1,
     "degree": 2,
-    "betweeness": 8,
-    "closeness": 0.0929,
     "between_edges": 2,
     "withinedges": 0,
     "totaledges": 2,
@@ -260,8 +236,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 1,
-    "y": 0.4167
+    "x": 0.2563,
+    "y": 1
   },
   {
     "id": "Mathematics",
@@ -273,8 +249,6 @@
     "field": "Mathematics",
     "numbernodes": 7,
     "degree": 5,
-    "betweeness": 0,
-    "closeness": 0.0767,
     "between_edges": 27,
     "withinedges": 4,
     "totaledges": 31,
@@ -282,8 +256,8 @@
     "internalratio": 0.129,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.36,
-    "y": 0.609
+    "x": 0.0931,
+    "y": 0.1441
   },
   {
     "id": "Medicine",
@@ -295,8 +269,6 @@
     "field": "Medicine",
     "numbernodes": 3,
     "degree": 4,
-    "betweeness": 0,
-    "closeness": 0.0911,
     "between_edges": 20,
     "withinedges": 1,
     "totaledges": 21,
@@ -304,8 +276,8 @@
     "internalratio": 0.0476,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.0003,
-    "y": 0.5747
+    "x": 0.6369,
+    "y": 0.3935
   },
   {
     "id": "Neuroscience",
@@ -317,8 +289,6 @@
     "field": "Neuroscience",
     "numbernodes": 1,
     "degree": 2,
-    "betweeness": 14,
-    "closeness": 0.096,
     "between_edges": 2,
     "withinedges": 0,
     "totaledges": 2,
@@ -326,8 +296,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.6399,
-    "y": -0.2457
+    "x": 0.1578,
+    "y": -0.6133
   },
   {
     "id": "Pharmacology, Toxicology and Pharmaceutics",
@@ -339,8 +309,6 @@
     "field": "Pharmacology, Toxicology and Pharmaceutics",
     "numbernodes": 1,
     "degree": 1,
-    "betweeness": 0,
-    "closeness": 0.0687,
     "between_edges": 1,
     "withinedges": 0,
     "totaledges": 1,
@@ -348,8 +316,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -0.3769,
-    "y": -1
+    "x": -1,
+    "y": -0.7725
   },
   {
     "id": "Physics and Astronomy",
@@ -361,8 +329,6 @@
     "field": "Physics and Astronomy",
     "numbernodes": 33,
     "degree": 9,
-    "betweeness": 1,
-    "closeness": 0.0919,
     "between_edges": 204,
     "withinedges": 99,
     "totaledges": 303,
@@ -370,8 +336,8 @@
     "internalratio": 0.3267,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.571,
-    "y": -0.358
+    "x": -0.7043,
+    "y": 0.0882
   },
   {
     "id": "Psychology",
@@ -383,8 +349,6 @@
     "field": "Psychology",
     "numbernodes": 2,
     "degree": 3,
-    "betweeness": 0,
-    "closeness": 0.0979,
     "between_edges": 11,
     "withinedges": 0,
     "totaledges": 11,
@@ -392,8 +356,8 @@
     "internalratio": 0,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": -1,
-    "y": 0.3358
+    "x": 1,
+    "y": 0.1214
   },
   {
     "id": "Social Sciences",
@@ -405,8 +369,6 @@
     "field": "Social Sciences",
     "numbernodes": 295,
     "degree": 15,
-    "betweeness": 8,
-    "closeness": 0.0929,
     "between_edges": 1900,
     "withinedges": 2649,
     "totaledges": 4549,
@@ -414,7 +376,7 @@
     "internalratio": 0.5823,
     "window": "2002-2006",
     "stringsAsFactors": false,
-    "x": 0.0482,
-    "y": 0.214
+    "x": 0.3004,
+    "y": 0.3487
   }
 ]
