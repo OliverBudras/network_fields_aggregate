@@ -1,0 +1,298 @@
+---
+title: "01_descriptives"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+mainfont: "Arial"
+date: "2025-08-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = F, message = F)
+
+library(tidyverse)
+library(openalexR)
+library(tidyverse)
+library(here)
+library(bibliometrix)
+library(bibliometrixData)
+library(ggwordcloud)
+library(kableExtra)
+```
+
+
+```{r data load, cache=TRUE}
+
+data <- readRDS(here("descriptives.RDS"))
+
+```
+
+# Descriptives
+
+```{r descriptives}
+kable(data$description_table, booktabs=T, "latex", linesep="", caption = "Descriptive Summary") |> 
+  kable_styling(position = "center", latex_options = "hold_position")
+```
+
+# Top Articles
+
+```{r articles}
+top_articles <- data$top_articles 
+top_articles[13,1] <- NA
+top_articles <- top_articles[1:15,]
+top_articles <- top_articles |> 
+  select(authors,title, publication_year, cited_by_count, field_1)
+colnames(top_articles) <- c("Authors","Title", "Year","Citations", "Field")
+kable(top_articles, booktabs=T, "latex", linesep="", caption = "Top Articles in Terms of Citations") |> 
+  kable_styling(latex_options = c("center","HOLD_position"), font_size = 8) |> 
+  column_spec(1, width = "5cm", border_right = ) |> 
+  column_spec(2, width = "5cm") |> 
+  column_spec(5, width = "3cm") 
+```
+
+# Publications over Time
+
+```{r publications over time, fig.cap="Publication and Citations over Time"}
+N_over_time_tbl <- data$N_over_time_tbl
+
+ggplot(N_over_time_tbl, aes(publication_year, No_publications)) +
+    geom_line() +
+    labs(y="Publicatiions", x="Year") +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+  
+ggplot(N_over_time_tbl, aes(publication_year, No_citations)) +
+    geom_line()+
+    labs(y="Citations", x="Year") +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+```
+
+# Top Domains
+
+```{r domains, fig.cap="Number of Publication or Citations per Domain or Field"}
+
+articles_per_domain <- data$articles_per_domain
+
+
+ggplot(articles_per_domain,aes(No_publications, domain_1)) +
+    geom_bar(stat = "identity", color="black", fill = "grey") +
+    labs(y = "Domain", x="Publications") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,30000))
+  
+ggplot(articles_per_domain,aes(No_citations, domain_1)) +
+    geom_bar(stat = "identity", color="black", fill = "grey") +
+    labs(y = "Domain", x="Citations") +
+    theme_bw() +
+    theme(panel.grid = element_blank())  +
+    scale_x_continuous(expand = c(0,0), limits = c(0, 800000))
+
+  
+```
+
+# Top Fields
+
+```{r, fields, fig.height=10}
+  
+articles_per_field <- data$articles_per_field
+
+f1 <- ggplot(articles_per_field,aes(No_publications, fct_reorder(field_1, No_publications))) +
+    geom_bar(stat = "identity", color="black", fill = "grey") +
+    labs(y = "Field", x="Publications") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,15000))
+  
+f2 <- ggplot(articles_per_field,aes(No_citations, fct_reorder(field_1, No_citations))) +
+    geom_bar(stat = "identity", color="black", fill = "grey") +
+    labs(y = "Field", x="Citations") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,300000))
+
+gridExtra::grid.arrange(f1, f2, nrow=2)
+```
+
+# Domains over Time
+
+```{r domains over time, fig.cap="Number of Publications per Domain or Field over Time"}
+N_publications_over_time_domain_tbl<- data$N_publications_over_time_domain_tbl
+N_citations_over_time_domain_tbl <- data$N_citations_over_time_domain_tbl
+
+N_publications_over_time_domain_tbl |> 
+    pivot_longer(!publication_year, names_to = "Domain",values_to = "No_publications") |> 
+    ggplot(aes(publication_year,No_publications, color=Domain)) +
+    geom_line() +
+    labs(x = "Year", y="Publications") +
+    theme_bw() +
+    theme(panel.grid = element_blank(), legend.position = "bottom") +
+    scale_x_continuous(expand = c(0,0), limits = c(1970,2025))
+
+N_citations_over_time_domain_tbl |> 
+    pivot_longer(!publication_year, names_to = "Domain",values_to = "No_citations") |> 
+    ggplot(aes(publication_year,No_citations, color=Domain)) +
+    geom_line() +
+    labs(x = "Year", y="Citations") +
+    theme_bw() +
+    theme(panel.grid = element_blank(), legend.position = "bottom") +
+    scale_x_continuous(expand = c(0,0), limits = c(1970,2025))
+  
+
+```
+
+# Fields over Time
+
+
+```{r fields over time}
+N_publications_over_time_field_tbl<-data$N_publications_over_time_field_tbl
+N_citations_over_time_field_tbl <- data$N_citations_over_time_field_tbl
+
+N_publications_over_time_field_tbl |> 
+    pivot_longer(!publication_year, names_to = "field_1",values_to = "No_publications") |> 
+    ggplot(aes(publication_year,No_publications, color=field_1)) +
+    geom_line()+
+    theme_bw()  +
+    theme(legend.position = "bottom") + theme(
+      legend.text = element_text(size = 5),
+      legend.title = element_blank(),
+      legend.key.size = unit(0.1, "lines"),
+      legend.spacing = unit(0.05,"lines"),
+      panel.grid = element_blank())  +
+    scale_x_continuous(expand = c(0,0), limits = c(1970,2025)) +
+    labs(x = "Year", y="Publications") 
+
+
+N_citations_over_time_field_tbl |> 
+    pivot_longer(!publication_year, names_to = "field_1",values_to = "No_citations") |> 
+    ggplot(aes(publication_year,No_citations, color=field_1)) +
+    geom_line()+
+    theme_bw()  +
+    theme(legend.position = "bottom") + theme(
+      legend.text = element_text(size = 5),
+      legend.title = element_blank(),
+      legend.key.size = unit(0.01, "lines"), 
+      legend.spacing = unit(0.01,"lines"),
+      panel.grid = element_blank())  +
+    scale_x_continuous(expand = c(0,0), limits = c(1970,2025)) +
+    labs(x = "Year", y="Citations") 
+
+```
+
+
+# Top Authors
+
+```{r authors, fig.cap="Top Authors in Terms of Publications or Citations"}
+top_authors_publications_tbl <- data$top_authors_publications_tbl[1:30,]
+
+top_authors_citations_tbl <- data$top_authors_citations_tbl[1:30,]
+
+top_authors_publications_tbl |> 
+    ggplot(aes(No_publications,fct_reorder(author, No_publications))) +
+    geom_bar(stat = "identity", color = "black", fill = "grey") +
+    labs(y="Author", x="Publications") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,175))
+    
+  
+top_authors_citations_tbl |> 
+    ggplot(aes(No_citations,fct_reorder(author, No_citations))) +
+    geom_bar(stat = "identity", color = "black", fill = "grey") +
+    labs(y="Author", x="Citations") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,25000))
+```
+
+# Top Authors per Domain
+
+```{r authors per domain}
+kable(data$top_authors_domain_citations_tbl, booktabs=T, "latex", linesep="", caption = "Top Authors in Terms of Citations per Domain") |> 
+  kable_styling(position = "center", latex_options = c("HOLD_position", "scale_down"))
+
+kable(data$top_authors_domain_publications_tbl, booktabs=T, "latex", linesep="", caption = "Top Authors in Terms of Publications per Domain") |> 
+  kable_styling(position = "center", latex_options = c("HOLD_position", "scale_down"))
+```
+
+\newpage
+
+# Top Authors per Field
+
+```{r authors per field}
+
+test <- data$top_authors_field_citations_tbl[1:3,] |> t() |> data.frame() |> rownames_to_column("Field")
+colnames(test)[2:4] <- ""
+
+kable(test, booktabs=T, "latex", linesep="", caption = "Top Authors in Terms of Citations per Field") |> 
+  add_header_above(c(" " = 1, "Authors" = 3)) |> 
+  kable_styling(font_size = 8, latex_options = "HOLD_position") 
+
+test2 <- data$top_authors_field_publications_tbl[1:3,] |> t() |> data.frame() |> rownames_to_column("Field")
+colnames(test)[2:4] <- ""
+
+kable(test, booktabs=T, "latex", linesep="", caption = "Top Authors in Terms of Publications per Field") |> 
+  add_header_above(c(" " = 1, "Authors" = 3)) |> 
+  kable_styling(font_size = 8, latex_options = "HOLD_position")
+```
+
+\newpage
+
+# Top Journals
+
+```{r journals, fig.cap="Top Journals in Terms of Publications or Citations"}
+
+top_journals_publications_tbl <- data$top_journals_publications_tbl
+top_journals_citations_tbl <- data$top_journals_citations_tbl
+
+
+top_journals_publications_tbl |> 
+    arrange(desc(No_publications)) |> 
+    slice_max(order_by = No_publications, n = 30) |> 
+    ggplot(aes(No_publications,fct_reorder(journal, No_publications))) +
+    geom_bar(stat = "identity", color="black", fill="grey") +
+    labs(y="Journal", x="Publications") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,2500))
+  
+top_journals_citations_tbl |> 
+    arrange(desc(No_citations)) |> 
+    slice_max(order_by = No_citations, n = 30) |> 
+    ggplot(aes(No_citations,fct_reorder(journal, No_citations))) +
+    geom_bar(stat = "identity", color="black", fill="grey") +
+    labs(y="Journal", x="Citations") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) +
+    scale_x_continuous(expand = c(0,0), limits = c(0,50000))
+```
+
+
+
+# Top Keywords
+```{r keywords}
+
+keywords_tbl <- data$keywords_tbl
+colnames(keywords_tbl) <- c("Word", "N")
+
+keywords_tbl |> 
+  ggplot(aes(N,fct_reorder(Word, N))) +
+  geom_bar(stat = "identity", color="black", fill ="grey") +
+  labs(y="Word", x="N") +
+  theme_bw() +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(expand = c(0,0), limits = c(0,2000))
+
+
+kable(data$keywords_tbl, booktabs=T, "latex", linesep="", caption = "Top Keywords") |> 
+  kable_styling(position = "center", latex_options = "HOLD_position")
+
+# keywords_prep <- data$keywords_prep[1:200,]
+# 
+# set.seed(123)  # for reproducibility
+# ggplot(keywords_prep, aes(label = keywords, size=N))+
+#   geom_text_wordcloud()
+
+```
+

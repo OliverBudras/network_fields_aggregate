@@ -1,0 +1,151 @@
+---
+title: "Evolution of Fields"
+output: pdf_document
+date: "2025-09-09"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = F, message = F)
+
+library(tidyverse)
+library(openalexR)
+library(tidyverse)
+library(here)
+library(bibliometrix)
+library(bibliometrixData)
+library(ggwordcloud)
+library(kableExtra)
+```
+
+
+```{r data load and prep, cache=TRUE}
+
+# Folder with the RDS files
+rds_folder <- "Evolution Fields/"
+
+# List all RDS files
+rds_files <- list.files(rds_folder, pattern = "_metrics\\.RDS$", full.names = TRUE)
+
+# Read and combine
+all_metrics <- rds_files %>%
+  map_dfr(function(f) {
+    df <- readRDS(f)
+    
+    # Extract window from filename
+    # Assumes filenames like "1970-1974_metrics.RDS"
+    window <- str_extract(basename(f), "\\d{4}-\\d{4}")
+    
+    df %>% mutate(window = window)
+  }) |> 
+  drop_na() |> 
+  mutate(window = factor(window, levels = unique(window))) |> 
+  group_by(window) |> 
+  mutate(totalnumbernodes = sum(numbernodes),
+         totalnumberedges = sum(totaledges)) |> 
+  ungroup() |> 
+  mutate(relative_size_nodes = numbernodes/totalnumbernodes,
+         relative_size_edges = totaledges/totalnumberedges,
+         relative_size_within_edges = withinedges/totalnumberedges,
+         relative_size_between_edges = between_edges/totalnumberedges)
+
+
+
+df_long <- all_metrics %>%
+  tidyr::pivot_longer(cols = c(internalratio, externalratio,degree,
+                               betweeness, closeness, between_edges, withinedges,
+                               numbernodes, totaledges, relative_size_nodes,
+                               relative_size_edges,relative_size_within_edges,
+                               relative_size_between_edges, citations),
+                      names_to = "type", values_to = "value")
+```
+
+```{r plotting funcs, cache=TRUE}
+plot_type <- function(data){
+  
+  data <- df_long
+  
+  data_plot <- data |> 
+    group_by(window, type) |> 
+    summarise(value = mean(value))
+  
+  ggplot(data_plot, aes(x = window, y = value)) +
+    geom_jitter(width = 0.2, height = 0, alpha = 0.7) +
+    theme_minimal() +
+    facet_wrap(~type, scales="free") +
+    theme(axis.text = element_blank()) +
+    labs(y = "Metric", x = "Window")
+  
+  
+}
+
+
+plot_type_field <- function(data,metric){
+  
+  data_plot <- data |> 
+    filter(type %in% metric)
+  
+  ggplot(data_plot, aes(x = window, y = value,color=type)) +
+    geom_jitter(width = 0.2, height = 0, alpha = 0.7) +
+    theme_minimal() +
+    facet_wrap(~field) +
+    theme(axis.text = element_blank(),
+          legend.position = "none") +
+    labs(y = toupper(metric), x = "Window")
+
+  
+  
+}
+
+```
+
+
+# Aggregate Metrics
+
+```{r metrics_agg, cache=TRUE}
+plot_type(df_long)
+```
+
+\newpage
+
+# Field-Level Metrics
+
+## Relative Number of Nodes and Number of Citations
+
+- Relative number of Nodes:
+\begin{equation}
+RelSize_{t,f} = \frac{N(V)_{t,f}}{\sum_f^F N(V)_{t,f}} 
+\end{equation}
+where:
+- $RelSize_{t,f}$ measures the relative number of nodes for field $f$ in time window $t$ across all $i$ articles of a field
+- $N(V)_{t,f}$ measures the total number of nodes for field $f$ in time window $t$ across all articles $i$ of the field. It is therefore defined as $N(V)_{t,f} = \sum_i 1_{field(i)=f}$, where $1_{field(i)=f}$ is an indicator function, taking the value one if article $i$ belongs to field f.
+- The number of citations per field and time window is measured as the sum of citations across all articles of a field in a give time window, respectively.
+
+```{r nodes_citations}
+plot_type_field(df_long, metric = c("relative_size_nodes")) # Nodes(Field)/Nodes(TotalWindow)
+plot_type_field(df_long, metric = c("citations"))
+```
+
+##
+
+```{r edges}
+plot_type_field(df_long, metric = c("relative_size_edges")) # Edges(Field)/Edges(TotalWindow)
+plot_type_field(df_long, metric = c("relative_size_within_edges", "relative_size_between_edges"))
+# Edges(WithinField)/Edges(TotalWindow), Edges(BetweenField)/Edges(TotalWindow)
+```
+
+##
+
+```{r ratios}
+plot_type_field(df_long, metric = c("internalratio", "externalratio"))
+# Edges(WithinField)/Edges(WithinField)+Edges(BetweenField), Edges(BetweenField)/Edges(WithinField)+Edges(BetweenField)
+```
+
+##
+
+```{r network_stats}
+plot_type_field(df_long, metric = c("degree"))
+plot_type_field(df_long, metric = c("closeness"))
+plot_type_field(df_long, metric = c("betweeness"))
+```
+
