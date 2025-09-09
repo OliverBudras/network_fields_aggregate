@@ -6,7 +6,8 @@ date: "2025-09-09"
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = F, message = F)
+knitr::opts_chunk$set(echo = FALSE, warning = F, message = F,
+                      fig.width = 10, fig.height = 8, dpi = 300, out.width = "100%")
 
 library(tidyverse)
 library(openalexR)
@@ -85,17 +86,38 @@ plot_type_field <- function(data,metric){
   data_plot <- data |> 
     filter(type %in% metric)
   
+  if(length(metric) >= 2){
+    
+    name <- paste(metric, collapse = "\\/")
+    
+    ggplot(data_plot, aes(x = window, y = value,color=type)) +
+    geom_jitter(width = 0.2, height = 0, alpha = 0.7) +
+    theme_minimal() +
+    facet_wrap(~stringr::str_wrap(field, width = 30), ncol = 3) +
+    theme(strip.text.x = element_text(size = 9, margin = margin(t = 5, b = 5)),
+          strip.text.y = element_text(size = 9, margin = margin(l = 5, r = 5)),
+          plot.margin = grid::unit(c(1,1,1,1), "cm"),
+          axis.text = element_blank(),
+          legend.position = "bottom") +
+    labs(y = "Metric", x = "Window")
+
+  } else{
+    
   ggplot(data_plot, aes(x = window, y = value,color=type)) +
     geom_jitter(width = 0.2, height = 0, alpha = 0.7) +
     theme_minimal() +
-    facet_wrap(~field) +
-    theme(axis.text = element_blank(),
+    facet_wrap(~stringr::str_wrap(field, width = 30), ncol = 3) +
+    theme(strip.text.x = element_text(size = 9, margin = margin(t = 5, b = 5)),
+          strip.text.y = element_text(size = 9, margin = margin(l = 5, r = 5)),
+          plot.margin = grid::unit(c(1,1,1,1), "cm"),
+          axis.text = element_blank(),
           legend.position = "none") +
     labs(y = toupper(metric), x = "Window")
 
   
-  
+  }
 }
+
 
 ```
 
@@ -109,16 +131,18 @@ plot_type(df_long)
 \newpage
 
 # Field-Level Metrics
+Field-Level Metrics are derived from networks where articles are nodes and edges are based on the strength of bibliographic coupling between articles. The nodes, edges and their information is then aggregated per discipline, here called field.
 
 ## Relative Number of Nodes and Number of Citations
 
 - Relative number of Nodes:
 \begin{equation}
-RelSize_{t,f} = \frac{N(V)_{t,f}}{\sum_f^F N(V)_{t,f}} 
+RelNodes_{t,f} = \frac{N(V)_{t,f}}{\sum_f^F N(V)_{t,f}} 
 \end{equation}
 where:
-- $RelSize_{t,f}$ measures the relative number of nodes for field $f$ in time window $t$ across all $i$ articles of a field
-- $N(V)_{t,f}$ measures the total number of nodes for field $f$ in time window $t$ across all articles $i$ of the field. It is therefore defined as $N(V)_{t,f} = \sum_i 1_{field(i)=f}$, where $1_{field(i)=f}$ is an indicator function, taking the value one if article $i$ belongs to field f.
+- $RelNodes_{t,f}$ measures the relative number of nodes for field $f$ in time window $t$ across all article nodes
+- $N(V)_{t,f}$ measures the total number of nodes for field $f$ in time window $t$ across all article nodes. It is therefore defined as $N(V)_{t,f} = \sum_{v_i} 1_{field(v_i)=f}$, where $1_{field(v_i)=f}$ is an indicator function, taking the value one if article node $v_i$ belongs to field $f$.
+
 - The number of citations per field and time window is measured as the sum of citations across all articles of a field in a give time window, respectively.
 
 ```{r nodes_citations}
@@ -126,7 +150,34 @@ plot_type_field(df_long, metric = c("relative_size_nodes")) # Nodes(Field)/Nodes
 plot_type_field(df_long, metric = c("citations"))
 ```
 
-##
+\newpage
+
+## Relative Number of Edges
+
+- Relative Number of Total Edges:
+\begin{equation}
+RelEdges_{t,f} = \frac{N(E)_{t,f}}{\sum_f^F N(E)_{t,f}} 
+\end{equation}
+where:
+- $RelEdges_{t,f}$ measures the relative number of edges incident on nodes within field $f$ in time window $t$
+- $N(E)_{t,f}$ measures the total number of edges incident on nodes within field $f$ in time window $t$. It is therefore defined as $N(E)_{t,f} = \sum_{e=(v_i,v_j)} 1_{field(v_i)=f \: \vee \: field(v_j) = f}$, where $1_{field(v_k)=f}$ is an indicator function, taking the value one if article node $k$ belongs to field $f$
+
+- Relative Number of Within-Field Edges:
+\begin{equation}
+RelEdgesWithin_{t,f} = \frac{N(E_{within})_{t,f}}{\sum_f^F N(E)_{t,f}} 
+\end{equation}
+where:
+- $RelEdgesWithin_{t,f}$ measures the relative number of edges between article nodes of the same field for field $f$ in time window $t$
+- $N(E_{within})_{t,f}$ measures the total number of edges between article nodes of the same field for field $f$ in time window $t$. It is therefore defined as $N(E_{within})_{t,f} = \sum_{e=(v_i,v_j)} 1_{field\{(v_i)=f\}} 1_{\{field(v_j) = f\}}$, where $1_{field(v_k)=f}$ is an indicator function, taking the value one if article node $k$ belongs to field $f$.
+
+- Relative Number of Between-Field Edges:
+\begin{equation}
+RelEdgesBetween_{t,f} = \frac{N(E_{Between})_{t,f}}{\sum_f^F N(E)_{t,f}} 
+\end{equation}
+where:
+- $RelEdgesBetween_{t,f}$ measures the relative number of edges between article nodes of different fields for field $f$ in time window $t$
+- $N(E_{Between})_{t,f}$ measures the total number of edges between article nodes of different fields for field $f$ in time window $t$. It's defined as $N(E_{Between})_{t,f} = \sum_{e=(v_i,v_j)} \left ( 1_{field\{(v_i=f)\}} 1_{field\{(v_j \neq f)\}} + 1_{field\{(v_i \neq f)\}} 1_{field\{(v_j = f)\}}  \right )$.
+
 
 ```{r edges}
 plot_type_field(df_long, metric = c("relative_size_edges")) # Edges(Field)/Edges(TotalWindow)
@@ -134,14 +185,28 @@ plot_type_field(df_long, metric = c("relative_size_within_edges", "relative_size
 # Edges(WithinField)/Edges(TotalWindow), Edges(BetweenField)/Edges(TotalWindow)
 ```
 
-##
+\newpage
+
+## Internal and External Edge Ratio
+- Internal Edge Ratio:
+\begin{equation}
+IR_{t,f} = \frac{N(E_{within})_{t,f}}{N(E)_{t,f}}
+\end{equation}
+- External Edge Ratio:
+\begin{equation}
+ER_{t,f} = \frac{N(E_{between})_{t,f}}{N(E)_{t,f}}
+\end{equation}
+
+with $N(E_{within})_{t,f}$, $N(E_{between})_{t,f}$ and N(E)_{t,f} defined as before. The internal and external ratios therefore measure the ratio of edges within (between) fields relative to the total number of edges of a field. Edges are derived from article-level nodes.
 
 ```{r ratios}
 plot_type_field(df_long, metric = c("internalratio", "externalratio"))
 # Edges(WithinField)/Edges(WithinField)+Edges(BetweenField), Edges(BetweenField)/Edges(WithinField)+Edges(BetweenField)
 ```
 
-##
+\newpage
+
+## Network Centrality Metrics (Degree, Closeness and Betweennes)
 
 ```{r network_stats}
 plot_type_field(df_long, metric = c("degree"))
