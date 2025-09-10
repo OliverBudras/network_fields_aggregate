@@ -99,7 +99,7 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
   font-size: 12px;
 }
 </style>
-  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-e7cbfdb9.js"></script>
+  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-8d0cb20e.js"></script>
   <link rel="modulepreload" crossorigin href="/network_fields_aggregate/assets/sigma-node-border.esm-f57be0f2.js">
 </head>
 <body>
@@ -109,14 +109,18 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
 <!-- Toggle Labels Button -->
 <button id="toggle-labels">Toggle Labels</button>
 
-<div id="edge-legend" style="position: fixed; bottom: 130px; left: 20px; background: rgba(255,255,255,0.9); padding: 10px; border:1px solid #ccc; border-radius:6px; font-size:12px; width:150px;">
-  <b>Edge Weight Legend</b>
-  <div style="height: 20px; width: 100%; background: linear-gradient(to right, hsl(0,100%,80%), hsl(0,100%,20%)); margin:5px 0;"></div>
+<div id="edge-legend" style="position: fixed; bottom: 150px; left: 20px; 
+    background: rgba(255,255,255,0.9); padding: 10px; border:1px solid #ccc; 
+    border-radius:6px; font-size:12px; width:150px;">
+  <b>Normalized Edge Weight</b>
+  <div style="height: 20px; width: 100%; 
+      background: linear-gradient(to right, #FAFAFA, #000000); margin:5px 0;"></div>
   <div style="display:flex; justify-content: space-between; font-size:10px;">
     <span>0</span>
-    <span>Max</span>
+    <span id="legend-max">1</span>
   </div>
 </div>
+
 
 <div id="window-controls">
   <div id="window-slider-container">
