@@ -1,0 +1,117 @@
+[
+  {
+    "field": "Agricultural and Biological Sciences",
+    "color": "#8DD3C7",
+    "_row": "Agricultural and Biological Sciences"
+  },
+  {
+    "field": "Arts and Humanities",
+    "color": "#FFFFB3",
+    "_row": "Arts and Humanities"
+  },
+  {
+    "field": "Biochemistry, Genetics and Molecular Biology",
+    "color": "#BEBADA",
+    "_row": "Biochemistry, Genetics and Molecular Biology"
+  },
+  {
+    "field": "Business, Management and Accounting",
+    "color": "#FB8072",
+    "_row": "Business, Management and Accounting"
+  },
+  {
+    "field": "Chemical Engineering",
+    "color": "#80B1D3",
+    "_row": "Chemical Engineering"
+  },
+  {
+    "field": "Computer Science",
+    "color": "#FDB462",
+    "_row": "Computer Science"
+  },
+  {
+    "field": "Decision Sciences",
+    "color": "#B3DE69",
+    "_row": "Decision Sciences"
+  },
+  {
+    "field": "Dentistry",
+    "color": "#FCCDE5",
+    "_row": "Dentistry"
+  },
+  {
+    "field": "Earth and Planetary Sciences",
+    "color": "#D9D9D9",
+    "_row": "Earth and Planetary Sciences"
+  },
+  {
+    "field": "Economics, Econometrics and Finance",
+    "color": "#BC80BD",
+    "_row": "Economics, Econometrics and Finance"
+  },
+  {
+    "field": "Energy",
+    "color": "#CCEBC5",
+    "_row": "Energy"
+  },
+  {
+    "field": "Engineering",
+    "color": "#FFED6F",
+    "_row": "Engineering"
+  },
+  {
+    "field": "Environmental Science",
+    "color": "#1B9E77",
+    "_row": "Environmental Science"
+  },
+  {
+    "field": "Health Professions",
+    "color": "#A07125",
+    "_row": "Health Professions"
+  },
+  {
+    "field": "Immunology and Microbiology",
+    "color": "#B16548",
+    "_row": "Immunology and Microbiology"
+  },
+  {
+    "field": "Materials Science",
+    "color": "#8068AE",
+    "_row": "Materials Science"
+  },
+  {
+    "field": "Mathematics",
+    "color": "#D03792",
+    "_row": "Mathematics"
+  },
+  {
+    "field": "Medicine",
+    "color": "#A66753",
+    "_row": "Medicine"
+  },
+  {
+    "field": "Neuroscience",
+    "color": "#7FA718",
+    "_row": "Neuroscience"
+  },
+  {
+    "field": "Pharmacology, Toxicology and Pharmaceutics",
+    "color": "#D9AA04",
+    "_row": "Pharmacology, Toxicology and Pharmaceutics"
+  },
+  {
+    "field": "Physics and Astronomy",
+    "color": "#BF8B12",
+    "_row": "Physics and Astronomy"
+  },
+  {
+    "field": "Psychology",
+    "color": "#927132",
+    "_row": "Psychology"
+  },
+  {
+    "field": "Social Sciences",
+    "color": "#666666",
+    "_row": "Social Sciences"
+  }
+]

@@ -144,7 +144,7 @@ const edges = await fetch(`${base}/windows_field_aggregate/edges_window_${String
 
 // -------------------------
 // Discrete slider points
-const totalWindows = 50;
+const totalWindows = 40;
 
 function renderSliderPoints() {
   sliderPointsContainer.innerHTML = "";
@@ -157,7 +157,7 @@ function renderSliderPoints() {
     if(i%5===0){
       const tickLabel = document.createElement("div");
       tickLabel.className="tick-label";
-      tickLabel.textContent = `${1970+i}-${1970+i+4}`;
+      tickLabel.textContent = `${1980+i}-${1980+i+4}`;
       point.appendChild(tickLabel);
     }
 

@@ -10,7 +10,7 @@
     "numbernodes": 1,
     "degree": 1,
     "betweeness": 0,
-    "closeness": 0.2695,
+    "closeness": 0.0418,
     "between_edges": 1,
     "withinedges": 0,
     "totaledges": 1,
@@ -18,8 +18,8 @@
     "internalratio": 0,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.4354,
-    "y": -0.7366
+    "x": -0.48,
+    "y": 0.9079
   },
   {
     "id": "Decision Sciences",
@@ -32,7 +32,7 @@
     "numbernodes": 10,
     "degree": 3,
     "betweeness": 3,
-    "closeness": 0.2804,
+    "closeness": 0.1059,
     "between_edges": 12,
     "withinedges": 13,
     "totaledges": 25,
@@ -40,8 +40,8 @@
     "internalratio": 0.52,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.8187,
-    "y": -0.9233
+    "x": -0.8588,
+    "y": 0.8148
   },
   {
     "id": "Economics, Econometrics and Finance",
@@ -54,7 +54,7 @@
     "numbernodes": 7,
     "degree": 1,
     "betweeness": 0,
-    "closeness": 0.1562,
+    "closeness": 0.0793,
     "between_edges": 5,
     "withinedges": 3,
     "totaledges": 8,
@@ -63,7 +63,7 @@
     "window": "1970-1974",
     "stringsAsFactors": false,
     "x": -1,
-    "y": -0.9388
+    "y": 0.7007
   },
   {
     "id": "Engineering",
@@ -84,7 +84,7 @@
     "window": "1970-1974",
     "stringsAsFactors": false,
     "x": 1,
-    "y": 1
+    "y": -1
   },
   {
     "id": "Psychology",
@@ -97,7 +97,7 @@
     "numbernodes": 1,
     "degree": 2,
     "betweeness": 0,
-    "closeness": 0.2367,
+    "closeness": 0.0871,
     "between_edges": 5,
     "withinedges": 0,
     "totaledges": 5,
@@ -105,8 +105,8 @@
     "internalratio": 0,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.663,
-    "y": -1
+    "x": -0.7841,
+    "y": 1
   },
   {
     "id": "Social Sciences",
@@ -119,7 +119,7 @@
     "numbernodes": 6,
     "degree": 3,
     "betweeness": 3,
-    "closeness": 0.3285,
+    "closeness": 0.0956,
     "between_edges": 7,
     "withinedges": 2,
     "totaledges": 9,
@@ -127,7 +127,7 @@
     "internalratio": 0.2222,
     "window": "1970-1974",
     "stringsAsFactors": false,
-    "x": -0.5868,
-    "y": -0.8401
+    "x": -0.6456,
+    "y": 0.9004
   }
 ]
