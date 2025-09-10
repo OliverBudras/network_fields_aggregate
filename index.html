@@ -99,8 +99,8 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
   font-size: 12px;
 }
 </style>
-  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-DOYA1XG1.js"></script>
-  <link rel="modulepreload" crossorigin href="/network_fields_aggregate/assets/sigma-node-border.esm-xRRpOcT2.js">
+  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-344cdc80.js"></script>
+  <link rel="modulepreload" crossorigin href="/network_fields_aggregate/assets/sigma-node-border.esm-f57be0f2.js">
 </head>
 <body>
 <div id="sigma-container"></div>
@@ -108,6 +108,19 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
 
 <!-- Toggle Labels Button -->
 <button id="toggle-labels">Toggle Labels</button>
+
+<div id="edge-legend" style="position: fixed; bottom: 130px; left: 20px; background: rgba(255,255,255,0.9); padding: 10px; border:1px solid #ccc; border-radius:6px; font-size:12px;">
+  <b>Edge Weight Legend</b>
+  <div style="display:flex; align-items:center; margin-top:5px;">
+    <div style="width:40px; height:8px; background:rgb(204,204,204); margin-right:5px;"></div>0
+  </div>
+  <div style="display:flex; align-items:center; margin-top:2px;">
+    <div style="width:40px; height:8px; background:rgb(102,102,102); margin-right:5px;"></div>1.5
+  </div>
+  <div style="display:flex; align-items:center; margin-top:2px;">
+    <div style="width:40px; height:8px; background:rgb(0,0,0); margin-right:5px;"></div>3
+  </div>
+</div>
 
 <div id="window-controls">
   <div id="window-slider-container">
@@ -117,7 +130,8 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
 </div>
 
 <div id="node-info"><b>Node Information</b><p>Click a node to see details</p></div>
-
+
+
 </body>
 </html>
 
