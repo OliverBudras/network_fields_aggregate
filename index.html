@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Field-Level Network</title>
 <style>
-html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sans-serif; background: #fff;}
+html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sans-serif; }
 #sigma-container { position:absolute; top:0; left:0; right:0; bottom:100px; }
 #window-controls {
   position:fixed;
@@ -90,6 +90,28 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   z-index: 9999;
 }
+
+#info-container {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 0px;              /* equal spacing between boxes */
+  z-index: 9999;
+}
+
+#info-container > div {
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
 #toggle-labels {
   position: fixed;
   top: 12px;
@@ -99,12 +121,19 @@ html, body { margin:0; padding:0; height:100%; width:100%; font-family:Arial, sa
   font-size: 12px;
 }
 </style>
-  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-f8942a6b.js"></script>
+  <script type="module" crossorigin src="/network_fields_aggregate/assets/page1-39e2a982.js"></script>
   <link rel="modulepreload" crossorigin href="/network_fields_aggregate/assets/sigma-node-border.esm-f57be0f2.js">
 </head>
 <body>
+
+
 <div id="sigma-container"></div>
 <div id="window-display"></div>
+<div id="info-container">
+  <div id="node-display"></div>
+  <div id="edge-display"></div>
+</div>
+
 
 <!-- Toggle Labels Button -->
 <button id="toggle-labels">Toggle Labels</button>
